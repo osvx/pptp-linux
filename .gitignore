@@ -1,0 +1,16 @@
+*~
+.*.swp
+/aclocal.m4
+/autom4te.cache
+/build-stamp
+/config
+/config.log
+/config.guess
+/config.status
+/config.sub
+/configure
+/debian/files
+/INSTALL
+/Makefile.in
+/Makefile
+debian/pptp-linux*

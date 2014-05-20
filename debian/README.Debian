@@ -1,0 +1,15 @@
+README.Debian
+=============
+
+This package works with the ppp package with version 2.4.2 and higher.
+
+In order to make it cooperate with earlier versions of ppp you have to patch
+the ppp package.
+
+If you want further information take a look at:
+http://pptpclient.sourceforge.net/howto-debian.phtml
+
+MPPE (Microsoft Point-to-Point Encryption) support requires an additionnal
+kernel module, provided by the Linux kernel version 2.6.15 and above.
+
+ -- Ola Lundqvist <opal@debian.org>, Tue Apr 22 08:15:04 2008

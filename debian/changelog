@@ -1,0 +1,212 @@
+pptp-linux (1.7.2-5) unstable; urgency=low
+
+  * Applied patch from Mats Erik Andersson
+    <mats.andersson@gisladisker.se> that make sure that only IPv4
+    addresses are returned from dns resolving. Is needed until IPv6
+    support is available for this tool. Closes: #576671.
+
+ -- Ola Lundqvist <opal@debian.org>  Wed, 16 Jun 2010 08:40:19 +0200
+
+pptp-linux (1.7.2-4) unstable; urgency=low
+
+  * Removed suggest for kernel-patch-mppe as that package has been
+    removed. Closes: #564030.
+  * Updated to standards version 3.8.0.
+  * Updated debian/rules clean target to be lintian compliant.
+  * Switched from DH_COMPAT in debian/rules to a compat file. Still version
+    4 compatible.
+
+ -- Ola Lundqvist <opal@debian.org>  Wed, 13 Jan 2010 08:32:28 +0100
+
+pptp-linux (1.7.2-3) unstable; urgency=high
+
+  * Instead of changing permissions after, make sure to set the proper
+    umask. Closes: #523476.
+
+ -- Ola Lundqvist <opal@debian.org>  Tue, 28 Apr 2009 06:47:47 +0200
+
+pptp-linux (1.7.2-2) unstable; urgency=low
+
+  * Make sure that the pptpsetup --delete option do not make passwords
+    in chap-secrets file visible to anyone. Closes: #523476.
+
+ -- Ola Lundqvist <opal@debian.org>  Sun, 12 Apr 2009 18:48:18 +0200
+
+pptp-linux (1.7.2-1) unstable; urgency=low
+
+  * New upstream release
+  * This new release fixes crash according to upstream. Closes: #427586.
+  * Updated copyright file according to changes in upstream file. This is
+    just editorial changes. Also made it clear about who is the current
+    maintainer.
+  * This new version includes pptpsetup with man page. This should make the
+    following bug obsolete. Closes: #167216.
+  * Removed non-free document.
+  * Updated to standards version 3.7.2.
+
+ -- Ola Lundqvist <opal@debian.org>  Sun,  1 Jun 2008 20:54:10 +0200
+
+pptp-linux (1.7.0-3) unstable; urgency=low
+
+  * Updated description, closes: #473712.
+
+ -- Ola Lundqvist <opal@debian.org>  Tue, 22 Apr 2008 08:13:25 +0200
+
+pptp-linux (1.7.0-2) unstable; urgency=low
+
+  * Updated description on when you need mppe patch, closes: #360106.
+  * Updated to debhelper 4 compatibility.
+  * Updated to standards version 3.6.2.
+
+ -- Ola Lundqvist <opal@debian.org>  Sat,  1 Apr 2006 11:35:32 +0200
+
+pptp-linux (1.7.0-1) unstable; urgency=low
+
+  * New upstream release, closes: #313319, #314824.
+  * Created a debian/watch file to make it easier to update in the future.
+  * Removed non-free documentation from the orig tarball.
+    Reference/rfc* Reference/ms-chap.txt Reference/pptp-draft.txt
+    Closes: #312366.
+
+ -- Ola Lundqvist <opal@debian.org>  Sun, 25 Sep 2005 13:49:58 +0200
+
+pptp-linux (1.5.0-5) unstable; urgency=low
+
+  * Fixed version reference in README.Debian, closes: #267696.
+    Also dded URL to upstream Debian howto.
+
+ -- Ola Lundqvist <opal@debian.org>  Mon, 31 Jan 2005 21:08:40 +0100
+
+pptp-linux (1.5.0-4) unstable; urgency=low
+
+  * Fixed manpage issue with not quoted '-', closes: #264872.
+
+ -- Ola Lundqvist <opal@debian.org>  Tue, 10 Aug 2004 20:59:37 +0200
+
+pptp-linux (1.5.0-3) unstable; urgency=low
+
+  * Updated manpage so that it have options that is supported by pppd,
+    closes: #264849.
+
+ -- Ola Lundqvist <opal@debian.org>  Tue, 10 Aug 2004 20:06:03 +0200
+
+pptp-linux (1.5.0-2) unstable; urgency=low
+
+  * Updated package description so it do not say that you need to patch
+    ppp.
+  * Made a versioned dependency on ppp.
+
+ -- Ola Lundqvist <opal@debian.org>  Fri,  6 Aug 2004 20:58:04 +0200
+
+pptp-linux (1.5.0-1) unstable; urgency=low
+
+  * New upstream release, closes: #241789.
+  * Updated the README file to tell that it works with ppp in sarge
+    and sid, closes: #243497.
+  * Updated standards version to 3.6.1.
+  * Added versioned dependency on debhelper.
+
+ -- Ola Lundqvist <opal@debian.org>  Wed, 28 Jul 2004 18:47:48 +0200
+
+pptp-linux (1.3.1-1) unstable; urgency=low
+
+  * New upstream version, closes: #197884.
+
+ -- Ola Lundqvist <opal@debian.org>  Thu, 26 Jun 2003 11:12:25 +0200
+
+pptp-linux (1.2.0-2) unstable; urgency=low
+
+  * New maintainer, closes: #184657.
+  * Now suggests kernel-patch-mppe, closes: #180538.
+  * Added some more info in the description of the package and created
+    a README.Debian file. Noted that you need to patch ppp in order to
+    get things to work properly.
+  * Updated the standards version from 3.1.1 to 3.5.8 (no other changes).
+  * Removed CVS dir from installation.
+  * Cleaned up the rules file.
+
+ -- Ola Lundqvist <opal@debian.org>  Wed, 16 Apr 2003 22:40:17 +0200
+
+pptp-linux (1.2.0-1) unstable; urgency=low
+
+  * New upstream release. Closes: #141173.
+
+ -- Thomas Quinot <thomas@debian.org>  Fri, 14 Mar 2003 00:00:00 +0000
+
+pptp-linux (1.1.0-2) unstable; urgency=low
+
+  * Update description. Closes: #150666.
+
+ -- Thomas Quinot <thomas@debian.org>  Sun, 23 Jun 2002 20:53:50 +0000
+
+pptp-linux (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Thomas Quinot <thomas@debian.org>  Fri, 20 Mar 2002 11:30:55 +1100
+
+pptp-linux (1.0.3-2) frozen unstable; urgency=low
+
+  * Update upstream distribution information. Closes: #97159.
+
+ -- Thomas Quinot <thomas@debian.org>  Fri, 11 May 2001 16:57:11 +0200
+
+pptp-linux (1.0.3-1) frozen unstable; urgency=low
+
+  * New upstream release. Debian patches have been integrated.
+  * Get rid of yada.
+
+ -- Thomas Quinot <thomas@debian.org>  Thu, 10 May 2001 14:29:30 +0200
+
+pptp-linux (1.0.2-5) frozen unstable; urgency=low
+
+  * Remove bashism in debian/rules.
+    Reported by Peter Palfrader <weasel@debian.org>.
+    Closes: #87653.
+  * Make sure yada is executable. Closes: #86888.
+
+ -- Thomas Quinot <thomas@debian.org>  Tue, 13 Mar 2001 11:43:31 +0100
+
+pptp-linux (1.0.2-4) frozen unstable; urgency=low
+
+  * Updated YADA to 0.9.4. Closes: #84564.
+
+ -- Thomas Quinot <thomas@debian.org>  Sun,  4 Feb 2001 18:42:10 +0100
+
+pptp-linux (1.0.2-3) frozen unstable; urgency=low
+
+  * New maintainer.
+  * Update Standards-Version.
+  * Use YADA.
+  * Fix order of local and remote call ID.
+    Fix bearer capability specification.
+    Closes:  #48536, #55532.
+  * Fix several gross bugs. Closes: #55583.
+  * Patch to allow bug-compatibility with Alcated ADSL 1000 modem.
+    
+ -- Thomas Quinot <thomas@debian.org>  Mon, 10 Jul 2000 23:52:16 +0200
+
+pptp-linux (1.0.2-2) frozen unstable; urgency=low
+
+  * lintian: binary-without-manpage pptp,
+             binary-without-manpage pptp_callmgr
+    including links to undocumented.7.gz for now (Bug#20141)
+
+ -- Roberto Lumbreras <rover@debian.org>  Tue, 24 Mar 1998 04:06:02 +0100
+
+pptp-linux (1.0.2-1) unstable; urgency=low
+
+  * new upstream version
+  * updated to Standards-Version 2.4.0.0
+
+ -- Roberto Lumbreras <rover@debian.org>  Mon,  2 Mar 1998 04:34:22 +0100
+
+pptp-linux (1.0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Christoph Lameter <clameter@debian.org>  Sun, 25 Jan 1998 22:42:45 -0800
+
+Local variables:
+mode: debian-changelog
+End:
