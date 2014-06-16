@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 4.0)
 
 Package: pptp-linux
 Architecture: any
-Depends: ${shlibs:Depends}, ppp (>= 2.4.2)
+Depends: ${shlibs:Depends}, vyatta-ppp (>= 2.4.2)
 Description: Point-to-Point Tunneling Protocol (PPTP) Client
  Client for the proprietary Microsoft Point-to-Point Tunneling
  Protocol, PPTP.  Allows connection to a PPTP based VPN as used
