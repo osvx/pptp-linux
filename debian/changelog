@@ -1,3 +1,9 @@
+pptp-linux (1.7.2-5+osvx1+projectx1) unstable; urgency=medium
+
+  * Change Debian dependency from ppp to vyatta-ppp
+
+ -- Valentin Yakovenkov <yakovenkov@gmail.com>  Mon, 16 Jun 2014 14:41:41 +0400
+
 pptp-linux (1.7.2-5) unstable; urgency=low
 
   * Applied patch from Mats Erik Andersson
